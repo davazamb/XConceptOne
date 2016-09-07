@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XConceptOne.MainPage">
+  <ScrollView>
+    <StackLayout Padding="10" Spacing="20">
+      <Label Text="Divisas"
+             FontSize="30"
+        FontAttributes="Bold"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"/>
+      <Label Text="Ingrese Valor:"
+             FontSize="30"
+        FontAttributes="Bold"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"/>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Bolivares:"
+               FontSize="25"
+          HorizontalOptions="Start"
+          VerticalOptions="Center"/>
+        <Entry x:Name="bolivarEntry"
+               Placeholder="Entre valor bolivares"
+               Keyboard="Numeric"
+             FontSize="20"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="Center"/>
+      </StackLayout>
+      <Button x:Name="convertButton"
+              Text="Convertir"
+              BackgroundColor="Yellow"
+              TextColor="Black"
+               FontSize="20"
+          HorizontalOptions="FillAndExpand"
+          VerticalOptions="Center"/>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Dolares:"
+               FontSize="25"
+          HorizontalOptions="Start"
+          VerticalOptions="Center"/>
+        <Entry x:Name="dollarsEntry"
+               Placeholder="valor dolares"
+               IsEnabled="False"
+             FontSize="20"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="Center"/>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Euros:"
+               FontSize="25"
+          HorizontalOptions="Start"
+          VerticalOptions="Center"/>
+        <Entry x:Name="eurosEntry"
+               Placeholder="valor euros"
+               IsEnabled="False"
+             FontSize="20"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="Center"/>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Pesos:"
+               FontSize="25"
+          HorizontalOptions="Start"
+          VerticalOptions="Center"/>
+        <Entry x:Name="pesosEntry"
+               Placeholder="valor pesos"
+               IsEnabled="False"
+             FontSize="20"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="Center"/>
+      </StackLayout>
+
+
+    </StackLayout>
+
+  </ScrollView>
+
+</ContentPage>
